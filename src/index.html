@@ -8,31 +8,25 @@
 </head>
 <body class="bg-white mt-36">
     <h1 class="text-5xl font-extrabold pl-[600px] mt-[50px]" id="header">ROCK-PAPER-SCISSORS</h1>
-    <div class="flex justify-evenly mt-24 max-w-[90vw] align-middle" class="button">
-        <buttton id="rock" class=" bg-gray-500 hover:bg-slate-600 cursor-pointer border-4 rounded-full border-black w-[250px] h-[250px]">
+    <div class="choices flex justify-evenly mt-24 max-w-[90vw] align-middle">
+        <buttton id="rock" class="choice bg-gray-500 hover:bg-slate-600 cursor-pointer border-4 rounded-full border-black w-[250px] h-[250px]">
             <img src="/images/rock.png"></img>
         </buttton>
-        <buttton id="paper" class=" bg-gray-500 hover:bg-slate-600 cursor-pointer border-4 rounded-full border-black w-[250px] h-[250px]">
+        <buttton id="paper" class="choice bg-gray-500 hover:bg-slate-600 cursor-pointer border-4 rounded-full border-black w-[250px] h-[250px]">
             <img src="/images/paper.png"></img>
         </buttton>
-        <buttton id="scissor" class=" bg-gray-500 hover:bg-slate-600 cursor-pointer border-4 rounded-full border-black w-[250px] h-[250px]">
+        <buttton id="scissor" class="choice bg-gray-500 hover:bg-slate-600 cursor-pointer border-4 rounded-full border-black w-[250px] h-[250px]">
             <img src="/images/scissors.png"></img>
         </buttton>
     </div>
     <div class="result-container flex flex-col justify-center mt-10 pl-[650px]  ">
-        <p class="font-bold text-4xl">
-              Your Choice: <span id="playerChoice"></span>
-          </p>
-        <p class="font-bold text-4xl ">
-              Computer's Choice: <span id="computerChoice"></span>
-          </p>
         <p class="font-bold text-4xl">
               Your Score: <span id="playerScore">0</span>
           </p>
         <p class="font-bold text-4xl">
               Computer Score: <span id="computerScore">0</span>
           </p>
-        <p class="result-text" id="result"></p>
+        <p class="result-text text-4xl font-bold" id="result"></p>
     </div>
    <script src="/src/app.js"></script>
 </body>
